@@ -7,7 +7,7 @@ Analyze a data set of crime reports in Chicago, IL, spanning from January 2001 t
 To run this project the following are required:
 * The crime reports data set for the city of Chicago located [here](https://catalog.data.gov/dataset/crimes-2001-to-present-398a4).(make sure to download the csv file)
 * Python 3.6
-* Python Libraries: pandas, beautifulsoup4, html5lib, requests, matplotlib, numpy
+* Python Libraries: Use `pip install pandas beautifulsoup4 html5lib requests matplotlib numpy`
 
 ###After cloning the repo 
 1. Place place the Crimes_-_2001_to_present.csv file into the root project directory 
