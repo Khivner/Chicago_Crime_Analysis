@@ -20,7 +20,11 @@ To run this project the following are required:
 3. (optional) The analysis currently runs for full moon events but if you're interested in first quarter moon, last quarter moon, or new moon periods you can change the value of the moon_phase variable in the Crimes_By_Moon_Phase.py to the appropriate integer value representing the desired phase (values are noted in the comments immediately above the variable).
 
 ##Results
-Initial results show that, on average over the course of the lunar cycle, the daily number of reported crimes does not fluctuate appreciably. On closer inspection however, there seems to be slight fluctuations showing peaks in activity just after full moon events and just before new moon events. Below the results are presented in graphical form, note that days whose bars are red represent the 24 hour periods directly before and after the date time for the lunar event being observed.
+Initial results show that, on average over the course of the lunar cycle, the daily number of reported crimes does not fluctuate appreciably. 
+
+On closer inspection however, there seems to be slight fluctuations showing peaks in activity just after full moon events and just before new moon events. 
+
+Below the results are presented in graphical form, note that days whose bars are red represent the 24 hour periods directly before and after the date time for the lunar event being observed.
 
 Full Moon Events:
 
