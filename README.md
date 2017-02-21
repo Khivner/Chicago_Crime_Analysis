@@ -9,6 +9,9 @@ To run this project the following are required:
 * Python 3.6
 * Python Libraries: pandas, beautifulsoup4, html5lib, requests, matplotlib, numpy
 
-After cloning the repo, place place the Crimes_-_2001_to_present.csv file into the root project directory, then just run the Crimes_By_Moon_Phase.py file with Python 3.6. The analysis currently runs for full moon events but if you're interested in first quarter moon, last quarter moon, or new moon periods you can change the value of the moon_phase variable in the Crimes_By_Moon_Phase.py to the appropriate integer value representing the desired phase (values are noted in the comments immediately above the variable).
+###After cloning the repo 
+1. Place place the Crimes_-_2001_to_present.csv file into the root project directory 
+2. Then just run the Crimes_By_Moon_Phase.py file with Python 3.6. 
+3. (optional) The analysis currently runs for full moon events but if you're interested in first quarter moon, last quarter moon, or new moon periods you can change the value of the moon_phase variable in the Crimes_By_Moon_Phase.py to the appropriate integer value representing the desired phase (values are noted in the comments immediately above the variable).
 
 ##Results
