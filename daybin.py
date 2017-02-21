@@ -2,17 +2,18 @@ import os, sys, csv
 from datetime import datetime, timedelta
 
 class cycle_bin:
-    def __init__(self, LD, Crime_dump):
+    def __init__(self, LD, Crime_dump, moon_phase):
         self.delta = timedelta(days=14)
         self.LD = LD
         self.Crime_dump = open(Crime_dump,'r')
         self.LD_format = "%Y %b %d %H:%M"
         self.CD_format = "%Y-%m-%d %H:%M:%S"
         self.Data = [0 for x in range(28)]
+        self.moon_phase = moon_phase
 
     def avg_data(self):
         for x in range(28):
-            self.Data[x] = round(float(self.Data[x]/len(self.LD.Data[1])))
+            self.Data[x] = round(float(self.Data[x]/len(self.LD.Data[self.moon_phase])))
             
     #bins data for each 24 hour period symmetrically around one lunar cycle
     #start_date/end_date refer to cycle start/end, date refers to lunar event
@@ -44,7 +45,7 @@ class cycle_bin:
             next(reader)
             
             #LD.Data[1] is where all the full moon event dates are stored
-            for date in self.LD.Data[1]:
+            for date in self.LD.Data[self.moon_phase]:
                 print(date)
                 #start and end dates for the current cycle
                 start_date = datetime.strptime(date, self.LD_format)-self.delta
